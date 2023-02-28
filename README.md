@@ -8,7 +8,7 @@
  import matplotlib.pyplot as plt
  </code>
  
- <p> After that we must include our dataset. In this project we have used Fashion MNIST dataset where you can see details in <a herf='https://keras.io/api/datasets/fashion_mnist/'> this link </a> </p>
+ <p> After that we must include our dataset. In this project we have used Fashion MNIST dataset where you can see details in <a href='https://keras.io/api/datasets/fashion_mnist/'> this link </a> </p>
  
  fashion_mnist = keras.datasets.fashion_mnist
 (x_train_full, y_train_full), (x_test, y_test) = fashion_mnist.load_data()
