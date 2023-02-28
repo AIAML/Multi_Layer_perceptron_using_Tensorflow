@@ -1,6 +1,6 @@
  <h2> Classification With Multi Layer Perceptron Using Tensorflow </h2>
  
- <p> In order to classify your doncuments using Tensowrflow by Python you need to import the following Packages. </p>
+ <p> In order to classify your documents using Tensowrflow by Python you need to import the following Packages. </p>
  <code>
   import tensorflow as tf
  from tensorflow import keras
@@ -30,6 +30,29 @@ model = keras.models.Sequential()
   model.add(keras.layers.Flatten(input_shape=[28, 28]))
 </code>
  
+ <p> For selecting your model you have to consider this issue that it takes a while to be proficient in selecting your proper model. In this problem we need to classify images so we have two hidden layer which use 'relu' function. Finally for the last layer we have used softmax function with 10 point which indicates our classes.  </p>
+ 
+ <code>
+  model = keras.models.Sequential()
+  model.add(keras.layers.Flatten(input_shape=[28, 28]))
+  model.add(keras.layers.Dense(300, activation="relu"))
+  model.add(keras.layers.Dense(100, activation="relu"))
+  model.add(keras.layers.Dense(10, activation="softmax"))
+ </code>
+ 
+ <p>
+ In addtion, before fitting you can view a summery of your model.
+ </p>
+ <code>
+  model.summary()
+ </code>
+ <p>
+ The last step is compiling and fiting our model. Pure and Simple
+ </p>
+ <code>
+  model.compile(loss="sparse_categorical_crossentropy", optimizer="sgd", metrics=["accuracy"])
+   history = model.fit(x_train, y_train, epochs=30, validation_data=(x_valid, y_valid))
+ </code>
 
  
  
