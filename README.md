@@ -71,7 +71,7 @@ model = keras.models.Sequential()
  plt.grid(True)
  plt.gca().set_ylim(0, 1)  # set the vertical range to [0-1]
  plt.show()
- plt.savefig("d:/t.jpg")
+
  
  </code>
  <img src='https://raw.githubusercontent.com/AIAML/Multi_Layer_perceptron_using_Tensorflow/master/myplot.png' />
