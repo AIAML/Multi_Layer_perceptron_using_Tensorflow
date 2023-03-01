@@ -17,6 +17,7 @@
 (x_train_full, y_train_full), (x_test, y_test) = fashion_mnist.load_data()
 </code>
 <p> Our Train dataset contains 60000 samples so as for to prevent overlearning we have set 10000 for validation set. The following code used for this purpose. </p>
+
 <code>
   x_valid, x_train = x_train_full[50000:] / 255.0, x_train_full[:50000] / 255.0
   y_valid, y_train = y_train_full[50000:], y_train_full[:50000]
@@ -25,6 +26,8 @@
  <p> Next We have to build our model. In this sample we have applied Sequential model of neural network.  </p>
  
  <code> 
+ <h3> Model </h3>
+ 
 model = keras.models.Sequential()
 </code>
 <p> The next step is building our layers. The first layer is formed based on our input. Our Input data is an image which has 28*28 dimenstion. As a consequence our code in python would be:  </p>
@@ -49,6 +52,7 @@ model = keras.models.Sequential()
  <code>
   model.summary()
  </code>
+ <h3> Fit and Evaluate </3>
  <p>
  The last step is compiling and fiting our model. Pure and Simple
  </p>
@@ -57,6 +61,10 @@ model = keras.models.Sequential()
    history = model.fit(x_train, y_train, epochs=30, validation_data=(x_valid, y_valid))
  </code>
 
+<p> 
+ For showing every epoch result we can use matplotlib which is available in python and at the beginning we have imported it in our project. Here we have our code using data on <i> history varaible </i> for illustrating.
+ </p>
+ 
  
  
  
