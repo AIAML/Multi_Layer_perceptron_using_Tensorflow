@@ -1,6 +1,6 @@
  <h2> Classification With Multi Layer Perceptron Using Tensorflow </h2>
  
- <p> In order to classify your documents using Tensowrflow by Python you need to import the following Packages. </p>
+ <p> In order to classify using Tensowrflow by Python you need to import the following Packages. </p>
  <code>
   import tensorflow as tf
  from tensorflow import keras
