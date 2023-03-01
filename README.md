@@ -64,6 +64,16 @@ model = keras.models.Sequential()
 <p> 
  For showing every epoch result we can use matplotlib which is available in python and at the beginning we have imported it in our project. Here we have our code using data on <i> history varaible </i> for illustrating.
  </p>
+ 
+ <code>
+ 
+ pd.DataFrame(history.history).plot(figsize=(8, 5))
+ plt.grid(True)
+ plt.gca().set_ylim(0, 1)  # set the vertical range to [0-1]
+ plt.show()
+ plt.savefig("d:/t.jpg")
+ 
+ </code>
  <img src='https://raw.githubusercontent.com/AIAML/Multi_Layer_perceptron_using_Tensorflow/master/myplot.png' />
  
  
