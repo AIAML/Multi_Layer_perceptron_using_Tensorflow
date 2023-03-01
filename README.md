@@ -52,7 +52,7 @@ model = keras.models.Sequential()
  <code>
   model.summary()
  </code>
- <h3> Fit and Evaluate </3>
+ <h3> Fit and Evaluate </h3>
  <p>
  The last step is compiling and fiting our model. Pure and Simple
  </p>
@@ -64,6 +64,8 @@ model = keras.models.Sequential()
 <p> 
  For showing every epoch result we can use matplotlib which is available in python and at the beginning we have imported it in our project. Here we have our code using data on <i> history varaible </i> for illustrating.
  </p>
+ <img src='https://raw.githubusercontent.com/AIAML/Multi_Layer_perceptron_using_Tensorflow/master/myplot.png' />
+ 
  
  
  
