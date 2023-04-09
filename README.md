@@ -8,6 +8,7 @@
  import matplotlib.pyplot as plt
  </code>
  
+ 
  <H3> Dataset </H3>
  
  <p> After that we must include our dataset. In this project we have used Fashion MNIST dataset where you can see details in <a href='https://keras.io/api/datasets/fashion_mnist/'> this link </a> </p>
@@ -53,6 +54,7 @@ model = keras.models.Sequential()
   model.summary()
  </code>
  <h3> Fit and Evaluate </h3>
+ 
  <p>
  The last step is compiling and fiting our model. Pure and Simple
  </p>
